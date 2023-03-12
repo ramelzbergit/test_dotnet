@@ -23,7 +23,7 @@ namespace dotnet_rpg.Controllers
         [HttpGet("GetAll")]
         public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> Get()
         {
-            return Ok(await _characterService.GetAllCharacters());
+            return Ok("here");
         }
 
         [HttpGet("{id}")]
